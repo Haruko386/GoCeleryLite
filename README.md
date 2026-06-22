@@ -1,6 +1,6 @@
-# GoTaskFlow
+# GeCelery-Lite
 
-GoTaskFlow is a lightweight asynchronous task queue system written in Go.
+GeCelery is a lightweight asynchronous task queue system written in Go.
 
 It is designed as a learning project for Go concurrency, including goroutines,
 channels, worker pools, context cancellation, task retries, timeout control,
