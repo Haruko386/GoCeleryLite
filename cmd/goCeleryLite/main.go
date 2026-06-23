@@ -1,7 +1,12 @@
 package main
 
-import "GoCeleryLite/internal/app"
+import (
+	"GoCeleryLite/internal/app"
+	"log"
+)
 
 func main() {
-	app.Run()
+	if err := app.Run(); err != nil {
+		log.Fatal(err)
+	}
 }

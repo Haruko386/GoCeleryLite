@@ -1,7 +1,19 @@
 package app
 
-import "fmt"
+import (
+	"GoCeleryLite/internal/server"
+	"context"
+	"os"
+	"os/signal"
+	"syscall"
+)
 
-func Run() {
-	fmt.Println("Hello World")
+func Run() error {
+	// Ctrl + c
+	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
+	defer stop()
+
+	srv := server.New(":9384")
+
+	return srv.Run(ctx)
 }

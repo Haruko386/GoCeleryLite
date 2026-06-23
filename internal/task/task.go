@@ -19,8 +19,8 @@ type Task struct {
 	UpdatedAt  time.Time       `json:"updated_at"`
 }
 
-// NewTasks Create a new task
-func NewTasks(id, name string, payload json.RawMessage) *Task {
+// NewTask Create a new task
+func NewTask(id, name string, payload json.RawMessage) *Task {
 	now := time.Now()
 
 	return &Task{
