@@ -18,9 +18,9 @@ and task state management.
 
 ## Roadmap
 
-- [ ] In-memory queue
+- [x] In-memory queue
 - [ ] Worker pool
-- [ ] HTTP API
+- [x] HTTP API
 - [ ] Built-in sleep task
 - [ ] Built-in echo task
 - [ ] Built-in hash task
